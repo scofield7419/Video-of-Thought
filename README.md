@@ -29,14 +29,14 @@ multiple steps from low to high levels, enabling not only pixel perceptive recog
 cognitive understanding of videos.
 
 <p align="center">
-  <img src="./figures/VoT.png" width="800"/>
+  <img src="./figures/VoT.png" width="550"/>
 </p>
 
 > We also introduce a novel video MLLM, namely MotionEpic, which supports not only video input but also the encoding, understanding and generation of STSGs.
 
 
 <p align="center">
-  <img src="./figures/MotionEpic.png" width="800"/>
+  <img src="./figures/MotionEpic.png" width="650"/>
 </p>
 
 
