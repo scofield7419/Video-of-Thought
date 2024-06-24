@@ -14,7 +14,7 @@
 
 
 
-**The implementation of the ICML 2024 paper [Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition](http://haofei.vip/downloads/papers/VoT_2024.pdf)**
+**The implementation of the ICML 2024 paper [Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition](https://is.gd/fcfZeO)**
 
 ----------
  ### 🎉 Visit the project page: [VoT](http://haofei.vip/VoT/)
