@@ -8,7 +8,7 @@
 
 
 <a href='https://haofei.vip/VoT/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-<a href='https://openreview.net/pdf?id=fO31YAyNbI'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+<a href='https://arxiv.org/abs/2501.03230'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/2fKCWjetV-Y)
 ![License](https://img.shields.io/badge/License-BSD-blue.svg)
 <a href="https://pytorch.org" rel="nofollow">
