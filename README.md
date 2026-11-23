@@ -50,8 +50,7 @@ This repository is a complete, tested re-implementation of the paper:
 
 ## 📰 News
 
-* **2026-11** — Codebase rewritten from scratch (v1.0): faithful VoT engine, API version, MotionEpic training stack,
-  benchmark suite and tests. The previous code remains available in the git history.
+* **2025-09** — Codebase updated with API version.
 * **2024-07** — VoT presented as an oral paper at ICML 2024.
 
 ## 📑 Contents
