@@ -7,7 +7,7 @@
 <p align="center">
   <a href="http://haofei.vip/">Hao Fei</a>,
   <a href="https://chocowu.github.io/">Shengqiong Wu</a>,
-  Wei Ji,
+  <a href="http://jiwei0523.github.io/">Wei Ji</a>,
   <a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a>,
   <a href="https://zhangmeishan.github.io/">Meishan Zhang</a>,
   <a href="https://www.comp.nus.edu.sg/~leeml/">Mong Li Lee</a>,
