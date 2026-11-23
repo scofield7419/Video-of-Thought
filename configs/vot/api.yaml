@@ -1,0 +1,16 @@
+# VoT with a general-purpose API model, STSG-free (the model writes the partial STSG itself).
+# Usage: vot run --config configs/vot/api.yaml --backend openai:gpt-4o ...
+vot:
+  fps: 1.0
+  max_frames: 16
+  frame_max_side: 768
+  context: chain            # Steps 1-3 share one dialogue
+  step2_mode: generate
+  neighbor_hops: 1
+  ranking: model            # Step-4-B ranking prompt; a unique score maximum is authoritative
+  verify: true
+  verify_perception: true
+  verify_cognition: true
+  max_verify_rounds: 2
+  parallel_calls: 4
+  gen: {max_new_tokens: 1024, temperature: 0.0}

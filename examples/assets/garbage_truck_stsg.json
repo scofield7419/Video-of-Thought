@@ -1,0 +1,692 @@
+{
+ "meta": {
+  "video_id": "garbage_truck_demo",
+  "note": "illustrative STSG for the paper's running example"
+ },
+ "frames": [
+  {
+   "index": 1,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      8.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      44.0,
+      40.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      70.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      66.0,
+      52.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "walking to",
+     "trash can"
+    ],
+    [
+     "man-1",
+     "standing on",
+     "truck"
+    ]
+   ],
+   "timestamp": 0.5
+  },
+  {
+   "index": 2,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      14.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      50.0,
+      39.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      67.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      63.0,
+      52.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "walking to",
+     "trash can"
+    ],
+    [
+     "man-1",
+     "standing on",
+     "truck"
+    ]
+   ],
+   "timestamp": 1.5
+  },
+  {
+   "index": 3,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      20.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      56.0,
+      38.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      64.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      60.0,
+      52.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "holding",
+     "trash can"
+    ],
+    [
+     "man-1",
+     "next to",
+     "man-2"
+    ]
+   ],
+   "timestamp": 2.5
+  },
+  {
+   "index": 4,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      26.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      62.0,
+      37.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      61.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      49.0,
+      52.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "holding",
+     "trash can"
+    ],
+    [
+     "man-1",
+     "next to",
+     "man-2"
+    ]
+   ],
+   "timestamp": 3.5
+  },
+  {
+   "index": 5,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      32.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      68.0,
+      36.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      58.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      46.0,
+      38.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "pouring",
+     "trash can"
+    ],
+    [
+     "trash can",
+     "above",
+     "truck"
+    ],
+    [
+     "man-1",
+     "next to",
+     "truck"
+    ]
+   ],
+   "timestamp": 4.5
+  },
+  {
+   "index": 6,
+   "objects": [
+    {
+     "id": "truck",
+     "bbox": [
+      38.0,
+      35.0,
+      34.0,
+      30.0
+     ]
+    },
+    {
+     "id": "man-1",
+     "bbox": [
+      74.0,
+      35.0,
+      6.0,
+      24.0
+     ]
+    },
+    {
+     "id": "man-2",
+     "bbox": [
+      55.0,
+      42.0,
+      6.0,
+      22.0
+     ]
+    },
+    {
+     "id": "trash can",
+     "bbox": [
+      43.0,
+      38.0,
+      7.0,
+      12.0
+     ]
+    },
+    {
+     "id": "house",
+     "bbox": [
+      55.0,
+      5.0,
+      40.0,
+      30.0
+     ]
+    },
+    {
+     "id": "street",
+     "bbox": [
+      0.0,
+      62.0,
+      100.0,
+      38.0
+     ]
+    }
+   ],
+   "triplets": [
+    [
+     "truck",
+     "on",
+     "street"
+    ],
+    [
+     "house",
+     "beside",
+     "street"
+    ],
+    [
+     "man-2",
+     "pouring",
+     "trash can"
+    ],
+    [
+     "trash can",
+     "above",
+     "truck"
+    ],
+    [
+     "man-1",
+     "next to",
+     "truck"
+    ]
+   ],
+   "timestamp": 5.5
+  }
+ ],
+ "coref": [
+  [
+   1,
+   "truck",
+   2,
+   "truck"
+  ],
+  [
+   1,
+   "man-1",
+   2,
+   "man-1"
+  ],
+  [
+   1,
+   "man-2",
+   2,
+   "man-2"
+  ],
+  [
+   1,
+   "trash can",
+   2,
+   "trash can"
+  ],
+  [
+   1,
+   "house",
+   2,
+   "house"
+  ],
+  [
+   1,
+   "street",
+   2,
+   "street"
+  ],
+  [
+   2,
+   "truck",
+   3,
+   "truck"
+  ],
+  [
+   2,
+   "man-1",
+   3,
+   "man-1"
+  ],
+  [
+   2,
+   "man-2",
+   3,
+   "man-2"
+  ],
+  [
+   2,
+   "trash can",
+   3,
+   "trash can"
+  ],
+  [
+   2,
+   "house",
+   3,
+   "house"
+  ],
+  [
+   2,
+   "street",
+   3,
+   "street"
+  ],
+  [
+   3,
+   "truck",
+   4,
+   "truck"
+  ],
+  [
+   3,
+   "man-1",
+   4,
+   "man-1"
+  ],
+  [
+   3,
+   "man-2",
+   4,
+   "man-2"
+  ],
+  [
+   3,
+   "trash can",
+   4,
+   "trash can"
+  ],
+  [
+   3,
+   "house",
+   4,
+   "house"
+  ],
+  [
+   3,
+   "street",
+   4,
+   "street"
+  ],
+  [
+   4,
+   "truck",
+   5,
+   "truck"
+  ],
+  [
+   4,
+   "man-1",
+   5,
+   "man-1"
+  ],
+  [
+   4,
+   "man-2",
+   5,
+   "man-2"
+  ],
+  [
+   4,
+   "trash can",
+   5,
+   "trash can"
+  ],
+  [
+   4,
+   "house",
+   5,
+   "house"
+  ],
+  [
+   4,
+   "street",
+   5,
+   "street"
+  ],
+  [
+   5,
+   "truck",
+   6,
+   "truck"
+  ],
+  [
+   5,
+   "man-1",
+   6,
+   "man-1"
+  ],
+  [
+   5,
+   "man-2",
+   6,
+   "man-2"
+  ],
+  [
+   5,
+   "trash can",
+   6,
+   "trash can"
+  ],
+  [
+   5,
+   "house",
+   6,
+   "house"
+  ],
+  [
+   5,
+   "street",
+   6,
+   "street"
+  ]
+ ]
+}

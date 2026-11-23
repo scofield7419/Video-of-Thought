@@ -1,0 +1,16 @@
+# VoT with an API model on top of an explicit STSG (from --stsg-provider detector|vlm|static:<dir>).
+# Step-2 lets the model select the target tracklets from the full STSG; boxes are snapped to it.
+vot:
+  fps: 2.0
+  max_frames: 16
+  frame_max_side: 768
+  context: chain
+  step2_mode: select        # or "match" for programmatic grounding without an LLM call
+  snap_boxes_to_reference: true
+  neighbor_hops: 1
+  stsg_max_frames: 16
+  ranking: model
+  verify: true
+  max_verify_rounds: 2
+  parallel_calls: 4
+  gen: {max_new_tokens: 1024, temperature: 0.0}

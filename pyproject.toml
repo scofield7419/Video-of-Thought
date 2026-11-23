@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video-of-thought"
+version = "1.0.0"
+description = "Video-of-Thought: step-by-step video reasoning from perception to cognition (ICML 2024)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Hao Fei" }, { name = "Shengqiong Wu" }, { name = "Wei Ji" }, { name = "Hanwang Zhang" },
+  { name = "Meishan Zhang" }, { name = "Mong Li Lee" }, { name = "Wynne Hsu" },
+]
+keywords = ["video reasoning", "chain-of-thought", "multimodal LLM", "scene graph", "video question answering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.22", "pillow>=9.0", "pyyaml>=6.0", "tqdm>=4.60"]
+
+[project.optional-dependencies]
+api = ["openai>=1.40", "anthropic>=2.12"]
+video = ["decord>=0.6; platform_machine == 'x86_64'", "av>=11.0", "opencv-python-headless>=4.8"]
+grounding = ["torch>=2.1", "transformers>=4.45", "scipy>=1.10"]
+train = [
+  "torch>=2.1", "transformers>=4.45,<5", "peft>=0.12,<1.0", "accelerate>=0.33", "deepspeed>=0.14; platform_system == 'Linux'",
+  "sentencepiece", "protobuf", "scipy>=1.10",
+]
+dev = ["pytest>=7", "ruff>=0.5"]
+all = ["video-of-thought[api,video,grounding,train,dev]"]
+
+[project.scripts]
+vot = "vot.cli:main"
+
+[project.urls]
+Homepage = "https://haofei.vip/VoT/"
+Paper = "https://arxiv.org/abs/2501.03230"
+Repository = "https://github.com/scofield7419/Video-of-Thought"
+
+[tool.setuptools.packages.find]
+include = ["vot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py39"

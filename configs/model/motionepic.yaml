@@ -1,0 +1,23 @@
+# MotionEpic architecture (paper Sec. 3.1 / Sec. 5). Pass with --motionepic_config.
+llm_name_or_path: lmsys/vicuna-7b-v1.5
+vision_name_or_path: openai/clip-vit-large-patch14
+vision_select_layer: -2
+image_size: 224
+sample_fps: 8.0          # uniform sampling rate used in the paper
+max_frames: 32           # cap on sampled frames per video
+# video Q-Former projector
+qformer_hidden_size: 768
+frame_qformer_layers: 12
+video_qformer_layers: 2
+num_frame_query_tokens: 32
+num_query_tokens: 32
+blip2_qformer_init: Salesforce/blip2-opt-2.7b
+# recurrent graph-transformer STSG encoder (6 layers, 768-d)
+stsg_feature_dim: 768    # CLIP ViT-L/14 joint embedding dim (RoI features, labels, predicates)
+stsg_hidden_size: 768
+stsg_num_layers: 6
+stsg_num_heads: 8
+stsg_num_tokens: 32
+max_stsg_frames: 32
+max_stsg_nodes: 24
+phrase_encoder: clip

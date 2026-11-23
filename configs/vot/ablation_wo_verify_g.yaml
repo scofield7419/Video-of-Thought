@@ -1,0 +1,4 @@
+# Table 4 ablation: verification without the perception (pixel grounding) perspective.
+vot:
+  verify_perception: false
+  verify_cognition: true

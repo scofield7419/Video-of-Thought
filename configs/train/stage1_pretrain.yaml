@@ -1,0 +1,29 @@
+# Stage 1 - video-text alignment pretraining on WebVid captions.
+# Trainable: video Q-Former projector. Frozen: CLIP, LLM. No STSG, no LoRA.
+motionepic_config: configs/model/motionepic.yaml
+blip2_qformer_init: Salesforce/blip2-opt-2.7b
+data_path: [data/sft/webvid_caption.jsonl]
+video_root: data/webvid/videos
+sample_fps: 8.0
+max_frames: 32
+train_projector: true
+train_stsg_encoder: false
+lora_enable: false
+model_max_length: 1024
+output_dir: checkpoints/motionepic-stage1
+bf16: true
+tf32: true
+num_train_epochs: 1
+per_device_train_batch_size: 16
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-4
+weight_decay: 0.0
+warmup_ratio: 0.03
+lr_scheduler_type: cosine
+logging_steps: 10
+save_strategy: steps
+save_steps: 2000
+save_total_limit: 2
+dataloader_num_workers: 8
+gradient_checkpointing: true
+report_to: tensorboard

@@ -1,0 +1,16 @@
+# VoT with MotionEpic (paper setting): 8 fps sampling, STSG-free inference, the generated
+# partial STSG is recycled through the STSG encoder in Steps 3 and 5.
+vot:
+  fps: 8.0
+  max_frames: 32
+  frame_max_side: null
+  context: isolated         # short-context 7B model: every step only sees its slot-filled prompt
+  step2_mode: generate
+  neighbor_hops: 1
+  stsg_max_frames: 32
+  ranking: model
+  verify: true
+  max_verify_rounds: 2
+  parallel_calls: 1
+  step2_max_new_tokens: 1536
+  gen: {max_new_tokens: 512, temperature: 0.0}

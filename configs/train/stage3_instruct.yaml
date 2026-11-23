@@ -1,0 +1,29 @@
+# Stage 3 - video instruction tuning (VideoChat + Video-ChatGPT instruction data).
+# Continues the stage-2 LoRA. Trainable: projector + STSG encoder + LoRA.
+init_from: checkpoints/motionepic-stage2
+data_path: [data/sft/videochat_instruct.jsonl, data/sft/videochatgpt_instruct.jsonl]
+video_root: data/instruct/videos
+sample_fps: 8.0
+max_frames: 32
+train_projector: true
+train_stsg_encoder: true
+lora_enable: true
+mm_lr: 2.0e-5
+model_max_length: 4096
+output_dir: checkpoints/motionepic-stage3
+bf16: true
+tf32: true
+num_train_epochs: 3
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+weight_decay: 0.0
+warmup_ratio: 0.03
+lr_scheduler_type: cosine
+logging_steps: 10
+save_strategy: steps
+save_steps: 2000
+save_total_limit: 2
+dataloader_num_workers: 8
+gradient_checkpointing: true
+report_to: tensorboard

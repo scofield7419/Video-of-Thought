@@ -1,0 +1,27 @@
+# Optional stage 4 - downstream fine-tuning on a benchmark's training split
+# (fine-tuning setting of Tables 1-3). Convert the split to vot.data.sft records first.
+init_from: checkpoints/motionepic-stage3
+data_path: [data/sft/nextqa_train.jsonl]
+video_root: data/nextqa/videos
+sample_fps: 8.0
+max_frames: 32
+train_projector: true
+train_stsg_encoder: true
+lora_enable: true
+mm_lr: 2.0e-5
+model_max_length: 4096
+output_dir: checkpoints/motionepic-nextqa
+bf16: true
+tf32: true
+num_train_epochs: 2
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+warmup_ratio: 0.03
+lr_scheduler_type: cosine
+logging_steps: 10
+save_strategy: epoch
+save_total_limit: 2
+dataloader_num_workers: 8
+gradient_checkpointing: true
+report_to: tensorboard
